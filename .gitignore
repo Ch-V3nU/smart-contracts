@@ -9,6 +9,9 @@ node_modules
 /typechain
 /typechain-types
 
+# npm lock file
+/package-lock.json
+
 # solidity-coverage files
 /coverage
 /coverage.json

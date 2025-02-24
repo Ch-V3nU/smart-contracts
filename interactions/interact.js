@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Replace this
+  const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Replace this address with your deployed contract address
   const [voter] = await hre.ethers.getSigners();
 
   const Voting = await hre.ethers.getContractFactory("Voting");

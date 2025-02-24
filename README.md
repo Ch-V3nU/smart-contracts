@@ -4,7 +4,7 @@
 
 1. **Clone the repository:**
     ```shell
-    git clone /c:/Users/user/Desktop/my-smart-contracts
+    git clone https://github.com/Ch-V3nU/smart-contracts.git
     cd my-smart-contracts
     ```
 
