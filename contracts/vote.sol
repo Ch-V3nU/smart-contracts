@@ -63,4 +63,18 @@ contract Voting {
 
         return (candidates[winnerIndex].name, highestVotes);
     }
+
+    /**
+     * @dev Returns the vote count of a specific candidate by name.
+     * @param candidateName The name of the candidate.
+     * @return The vote count of the specified candidate.
+     */
+    function getVotes(string memory candidateName) public view returns (uint256) {
+        for (uint256 i = 0; i < candidates.length; i++) {
+            if (keccak256(abi.encodePacked(candidates[i].name)) == keccak256(abi.encodePacked(candidateName))) {
+                return candidates[i].voteCount;
+            }
+        }
+        revert("Candidate not found.");
+    }
 }
